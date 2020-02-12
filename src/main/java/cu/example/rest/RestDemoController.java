@@ -1,9 +1,8 @@
 package cu.example.rest;
 
-import cu.example.model.Persona;
-import cu.example.repository.IPersonaRepo;
+import cu.example.model.Person;
+import cu.example.repository.IPersonRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,20 +12,20 @@ import java.util.List;
 public class RestDemoController {
 
     @Autowired
-    private IPersonaRepo repo;
+    private IPersonRepo repo;
 
     @GetMapping
-    public List<Persona> listar(){
+    public List<Person> listar(){
         return repo.findAll();
     }
 
     @PostMapping
-    public void insertar(@RequestBody Persona per){
+    public void insertar(@RequestBody Person per){
         repo.save(per);
     }
 
     @PutMapping
-    public void modificar(@RequestBody Persona per){
+    public void modificar(@RequestBody Person per){
         repo.save(per);
     }
 

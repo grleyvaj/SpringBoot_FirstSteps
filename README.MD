@@ -20,11 +20,17 @@ This's a backend project with my first steps in spring boot, following the steps
   - Work with JpaRepository
   - Implement `List people`
   
-### Step 4 REST Services
+ ### Step 4 REST Services
   - Implement RestDemoController and annotate it as @RestController
   - Install <a href="https://www.postman.com/downloads/" target="_blank">**Postman**</a> 
   - Work with methods as GET and POST and JSON in Postman.
   - Work with Request
+  
+ ### Step 5 Spring Security
+  - Add dependences to Spring Security in pom
+  - Create the User class and annotate it as @Entity, add class attributes and annotate the identifier as @Id
+  - Testing using SpringJUnit
+  - Create class SecurityConfig and note it as @Configuration, to connect login credentials
      
 ## Installation
    - All the `code` required to get started. Clone: `https://github.com/grleyvaj/springboot_firststeps.git`

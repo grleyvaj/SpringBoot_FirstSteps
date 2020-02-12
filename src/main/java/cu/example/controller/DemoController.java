@@ -1,7 +1,7 @@
 package cu.example.controller;
 
-import cu.example.model.Persona;
-import cu.example.repository.IPersonaRepo;
+import cu.example.model.Person;
+import cu.example.repository.IPersonRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class DemoController {
 
     @Autowired
-    IPersonaRepo repo;
+    IPersonRepo repo;
 
     @GetMapping("/greeting")
     public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
         //logic here but should be in the service
-        Persona persona = new Persona();
+        Person persona = new Person();
         persona.setIdPersona(2);
         persona.setNombre("Osmel");
         repo.save(persona);
