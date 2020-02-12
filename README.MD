@@ -6,19 +6,25 @@ This's a backend project with my first steps in spring boot, following the steps
 ### Step 1 Dependencies' injection 
  - Adding the first project dependencies
  - Adding services and repositories
- - Injection of dependency by annotations such as: @SpringBootService, @Service, @Repository, @Autowired, @Qualifer.
+ - Injection of dependency by annotations such as: @SpringBootService, @Service, @Repository, @Autowired, @Qualifer
  
  ### Step 2 Spring MVC
   - Adding controller class and work with annotations as: @Cotroller, @GetMapping, @RequestParam
-  - Using the Thymeleaf dependency to develop HTML web pages. Create HTML page.
-  - Create DemoWebApplication and annotate it as: @SpringBootApplication to run the project.
+  - Using the Thymeleaf dependency to develop HTML web pages. Create HTML page
+  - Create DemoWebApplication and annotate it as: @SpringBootApplication to run the project
 
  ### Step 3 Spring Data JPA
   - Adding the dependencies for projecto of JPA
   - Additing the classes of the model. Annotation used in model classes: @Entity, @Id, @Column
   - Setting access to data at the file: application.properties
-  - Work with JpaRepository.
+  - Work with JpaRepository
   - Implement `List people`
+  
+### Step 4 REST Services
+  - Implement RestDemoController and annotate it as @RestController
+  - Install <a href="https://www.postman.com/downloads/" target="_blank">**Postman**</a> 
+  - Work with methods as GET and POST and JSON in Postman.
+  - Work with Request
      
 ## Installation
    - All the `code` required to get started. Clone: `https://github.com/grleyvaj/springboot_firststeps.git`
