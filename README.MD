@@ -15,5 +15,5 @@ First steps with spring boot, following the steps of the youtube video: https://
   - Setting access to data at the file: application.properties
   
 ## Installation
-   - All the `code` required to get started. Clone: `https://github.com/grleyvaj/springboot_mvc_jpa.git`
+   - All the `code` required to get started. Clone: https://github.com/grleyvaj/springboot_firststeps.git
    - You will need to define the `JAVA_HOME` and `MAVEN_HOME` environment variables to deploy this project
